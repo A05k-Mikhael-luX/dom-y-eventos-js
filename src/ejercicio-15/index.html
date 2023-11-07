@@ -7,9 +7,20 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <ul id="miLista">
+      <li>Elemento1</li>
+      <li>Elemento2</li>
+      <li>Elemento3</li>
+    </ul>
 
     <script>
       // Escribe tu codigo javascript aqui
+      const lista = document.getElementById('miLista')
+      lista.addEventListener('click',(evento)=> {
+        if (evento.target.tagName === 'LI') {
+          alert('Click en un elemento de la lista')
+        }
+      })
     </script>
   </body>
 </html>
