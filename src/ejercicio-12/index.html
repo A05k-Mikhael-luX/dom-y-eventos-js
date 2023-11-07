@@ -7,9 +7,14 @@
   </head>
   <body>
     <!-- Escribe tu codigo html aqui -->
+    <button id="miBboton">Haz click</button>
 
     <script>
       // Escribe tu codigo javascript aqui
+      const boton = document.getElementById('miBoton')
+      boton.addEventListener('click',() => {
+        alert('Hiciste click en el boton')
+      })
     </script>
   </body>
 </html>
